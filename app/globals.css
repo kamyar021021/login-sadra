@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* app/globals.css - اضافه کردن این کلاس‌ها */
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* برای مرورگرهای قدیمی‌تر */
+@supports (transform-style: preserve-3d) {
+  .\[transform-style\:preserve-3d\] {
+    transform-style: preserve-3d;
+  }
+}
+
+@layer base {
+  html {
+    font-family: var(--font-gramophone), system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    background-color: #eddbd1;
+    overflow-x: hidden;
+  }
+}
+
